@@ -1,0 +1,263 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADC— Studio Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+ 
+<nav> 
+  <div class="img2"><img src="LOGO.png" alt="" width="200px" height="200px"   ></div>
+  <a href="#" class="logo" onclick="showPage('home')">ALY DIGITAL <span>&TECH</span></a>
+  <div class="nav-links">
+    <a href="#" class="active" id="nav-home"     onclick="showPage('home')">Accueil</a>
+    <a href="#"               id="nav-portfolio"  onclick="showPage('portfolio')">Portfolio</a>
+    <a href="#"               id="nav-blog"       onclick="showPage('blog')">Blog</a>
+    <a href="#"               id="nav-services"   onclick="showPage('services')">Services</a>
+    <a href="#" class="nav-cta" id="nav-contact"  onclick="showPage('contact')">Contact</a>
+  </div>
+</nav>
+ 
+<!-- ACCUEIL -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+    <span class="hero-tag">✦ Studio Digital Premium</span>
+    <h1>Créez l'<span class="neon-word">Extraordinaire</span><br>avec Nous</h1>
+    <p>Nous concevons des expériences digitales qui captivent, convertissent et marquent les esprits. Design premium, résultats premium.</p>
+    <div class="hero-btns">
+      <a href="#" class="btn-primary" onclick="showPage('portfolio');return false;">Voir nos travaux</a>
+      <a href="#" class="btn-outline"  onclick="showPage('contact');return false;">Démarrer un projet</a>
+    </div>
+  </section>
+ 
+  <div class="stats-strip">
+    <div class="stat"><div class="stat-num blue">15+</div><div class="stat-label">Projets livrés</div></div>
+    <div class="stat"><div class="stat-num violet">98%</div><div class="stat-label">Clients satisfaits</div></div>
+    <div class="stat"><div class="stat-num sky">12</div><div class="stat-label">Awards gagnés</div></div>
+    <div class="stat"><div class="stat-num blue">1</div><div class="stat-label">Années d'expérience</div></div>
+  </div>
+ 
+  <div class="section">
+    <span class="section-tag">✦ Nos Expertises</span>
+    <h2 class="section-title">Ce que nous faisons</h2>
+    <div class="cards-grid">
+      <div class="card blue"><div class="card-icon blue">🎨</div><h3>Design UI/UX</h3><p>Interfaces épurées et intuitives qui offrent une expérience utilisateur mémorable et augmentent la conversion.</p></div>
+      <div class="card violet"><div class="card-icon violet">⚡</div><h3>Développement Web</h3><p>Applications web rapides, scalables et modernes. Du prototype à la mise en production en un temps record.</p></div>
+      <div class="card sky"><div class="card-icon sky">📈</div><h3>Stratégie Digitale</h3><p>Analyse, positionnement et croissance organique pour dominer votre marché et dépasser vos concurrents.</p></div>
+      <div class="card lav"><div class="card-icon lav">🤖</div><h3>Intégration IA</h3><p>Automatisation intelligente et solutions IA sur-mesure pour propulser votre business à l'ère suivante.</p></div>
+    </div>
+  </div>
+ 
+  <footer>© 2026 ADC Studio — <a href="#" onclick="showPage('contact');return false;">Contact</a> · <a href="https://www.anthropic.com" target="_blank" rel="noopener">Propulsé par la créativité ↗</a></footer>
+</div>
+ 
+<!-- PORTFOLIO -->
+<div class="page" id="page-portfolio">
+  <div class="portfolio-hero">
+    <h1>Nos <em>Créations</em></h1>
+    <p style="color:#666;font-size:1rem;max-width:560px;line-height:1.7;margin-top:1rem;">Chaque projet est une occasion de repousser les limites. Découvrez nos réalisations illustrées.</p>
+    
+  </div>
+ 
+  <div class="bouton-bar">
+    <button class="bouton-btn active" onclick="filterWorks('all',this)">Tous</button>
+    <button class="bouton-btn" onclick="filterWorks('web',this)">Web</button>
+    <button class="bouton-btn" onclick="filterWorks('CDV',this)">CDV</button>
+    <button class="bouton-btn" onclick="filterWorks('STARTUP',this)">STARTUP</button>
+    <button class="bouton-btn" onclick="filterWorks('ia',this)">IA</button>
+  </div>
+ 
+  <div class="works-grid" id="works-grid">
+    <div class="work-card" data-cat="web IA STARTUP LOGO">
+      <div class="work-thumb">
+        <img src="LOGO.png" alt="LuxShop" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-blue">E-commerce</span>
+      </div>
+      <div class="work-info"><h3>ADC </h3><p>Création de logos unique et avec une touche d'indetique unique qui reflète les valeurs du startup</p><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+ 
+    <div class="work-card" data-cat="web CDV">
+      <div class="work-thumb">
+        <img src="CARTE.png" alt="AGENCE DE PUB" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-blue">Web App</span>
+      </div>
+      <div class="work-info"><h3>AGENCE PUBLICITAIRE</h3><p>Conception et élabotration  de système de buisness marketing</p><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+ 
+    <div class="work-card" data-cat="CDV  LOGO STARTUP">
+      <div class="work-thumb">
+        <img src="Copilot_20260424_195746.png" alt="ADC" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-blue">LOGO</span>
+      </div>
+      <div class="work-info"><h3>SAFIDY RAKOTO SOUNDLAB</h3><p>Agence d'emprunt de matériels de sonorisation</p><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+ 
+    <div class="work-card" data-cat="STARTUP">
+      <div class="work-thumb">
+        <img src="template_product_photoshoot.png" alt="NeuralCRM" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-sky">STARTUP</span>
+      </div>
+      <div class="work-info"><h3>JUICY </h3><p>Un start up  DE JUS DE FRUIT EXOTIQUE qui nous a contactez pour améliorer le visuelle de leur produits><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+ 
+    <div class="work-card" data-cat="branding">
+      <div class="work-thumb">
+        <img src="ChatGPT Image 4 mai 2026, 18_33_57.png" alt="Palais Nuit" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-sky">Branding</span>
+      </div>
+      <div class="work-info"><h3>NOVA Robotics</h3><p>Identité visuelle et site pour une association d'étudiant en informatique.</p><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+ 
+    <div class="work-card" data-cat="web STARTUP">
+      <div class="work-thumb">
+        <img src="ChatGPT Image 19 avr. 2026, 18_25_39.png" alt="LaunchPad" loading="lazy">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-neon-label nl-blue">ENTREPRISE</span>
+      </div>
+      <div class="work-info"><h3>MAISON DE L'ARTISANAT</h3><p>Une entreprise local .Conservation de l'identité culturelle de Fianarantsoa.</p><div class="work-info-meta"><span class="work-year">2026</span></div></div>
+    </div>
+  </div>
+ 
+  <footer>© 2026 ADC Aly Digital & Tech Studio — <a href="#" onclick="showPage('home');return false;">Accueil</a> · <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble ↗</a> · <a href="https://behance.net" target="_blank" rel="noopener">Behance ↗</a></footer>
+</div>
+ 
+<!-- BLOG -->
+<div class="page" id="page-blog">
+  <div class="blog-header"><h1>Le <em>Blog</em></h1></div>
+  <div class="blog-grid">
+    <div class="blog-main">
+      <div class="blog-featured">
+        <div class="blog-feat-img"><img src="LOGO.png" alt="Design 2025" loading="lazy"></div>
+        <div class="blog-feat-body">
+          <span class="blog-category">✦ Design Trends</span>
+          <h2>L'avenir du design web en 2026 : ADC, Créativité  et Minimalisme</h2>
+          <p>Les tendances visuelles de 2026 explosent les codes établis. Entre néomorphisme, glassmorphisme et l'émergence de l'IA générative, voici ce qui façonne les interfaces de demain.</p>
+          <div class="blog-meta">Par  Aly Razafimandimby · 15 mai 2026· </div>
+        </div>
+      </div>
+      <div class="small-posts">
+        <div class="small-post"><div class="small-post-emoji">⚡</div><div><h4>Performance Web : les 10 optimisations incontournables</h4><p>Core Web Vitals, lazy loading... Comment atteindre 100/100 sur Lighthouse.</p></div></div>
+        <div class="small-post"><div class="small-post-emoji">🤖</div><div><h4>Intégrer l'IA dans votre workflow créatif</h4><p>Midjourney, Claude, Figma AI : les outils qui révolutionnent la production design.</p></div></div>
+        <div class="small-post"><div class="small-post-emoji">🎨</div><div><h4>Choisir sa palette de couleurs : guide complet</h4><p>Psychologie des couleurs, accessibilité et harmonie visuelle pour vos projets.</p></div></div>
+      </div>
+    </div>
+    <div class="blog-sidebar">
+      <div class="sidebar-widget">
+        <h4>🔥 Ressources</h4>
+        <div style="display:flex;flex-direction:column;gap:0.8rem;">
+          <a href="https://web.dev" target="_blank" rel="noopener" style="font-size:0.85rem;color:var(--text-dark);text-decoration:none;border-bottom:1px solid var(--gray-light);padding-bottom:0.8rem;">Guide CSS Grid complet ↗</a>
+          <a href="https://developer.mozilla.org" target="_blank" rel="noopener" style="font-size:0.85rem;color:var(--text-dark);text-decoration:none;border-bottom:1px solid var(--gray-light);padding-bottom:0.8rem;">MDN Web Docs ↗</a>
+          <a href="https://css-tricks.com" target="_blank" rel="noopener" style="font-size:0.85rem;color:var(--text-dark);text-decoration:none;">CSS-Tricks : animations ↗</a>
+        </div>
+      </div>
+      <div class="sidebar-widget">
+        <h4>🏷️ Catégories</h4>
+        <div class="tag-cloud"><span class="tag">Design</span><span class="tag">Dev</span><span class="tag">UX</span><span class="tag">IA</span><span class="tag">CSS</span><span class="tag">Startup</span><span class="tag">SEO</span><span class="tag">React</span></div>
+      </div>
+      <div class="sidebar-widget" style="background:linear-gradient(135deg,rgba(26,107,255,0.05),rgba(139,0,255,0.05));border:1px dashed rgba(26,107,255,0.25);">
+        <h4>📨 Newsletter</h4>
+        <p style="font-size:0.85rem;color:#666;margin-bottom:1rem;">Recevez nos articles chaque semaine.</p>
+        <input type="email" placeholder="votre@email.com" style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--gray-mid);font-family:var(--font-body);font-size:0.85rem;outline:none;margin-bottom:0.7rem;">
+        <button onclick="alert('Merci ! Inscrit(e) avec succès 🎉')" style="width:100%;padding:0.7rem;border-radius:8px;border:none;background:linear-gradient(135deg,var(--neon-blue),var(--neon-violet));color:white;font-family:var(--font-body);font-size:0.85rem;font-weight:500;cursor:pointer;">S'inscrire →</button>
+      </div>
+    </div>
+  </div>
+  <footer>© 2026 ADC Studio — <a href="#" onclick="showPage('home');return false;">Accueil</a> · <a href="https://medium.com" target="_blank" rel="noopener">Medium ↗</a></footer>
+</div>
+ 
+<!-- SERVICES -->
+<div class="page" id="page-services">
+  <div class="services-hero">
+    <h1>Nos <em>Offres</em></h1>
+    <p>Des formules transparentes, adaptées à votre ambition. Sans surprise, avec un résultat premium garanti.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="plan-name">Starter</div><div class="plan-price">40<span style="font-size:1.5rem">€</span></div><div class="plan-period">/ projet</div>
+      <ul class="plan-features"><li>Site vitrine 1-3 pages</li><li>Design UI personnalisé</li><li>Responsive mobile</li><li>Formulaire de contact</li><li>Livraison en 7 jours</li></ul>
+      <button class="btn-plan" onclick="showPage('contact')">Commencer →</button>
+    </div>
+    <div class="pricing-card featured">
+      <div class="popular-badge">⚡ Le plus choisi</div>
+      <div class="plan-name">Pro</div><div class="plan-price"> 500<span style="font-size:1.5rem">€</span></div><div class="plan-period">/ projet</div>
+      <ul class="plan-features"><li>Site jusqu'à 10 pages</li><li>Design premium sur-mesure</li><li>Animations & interactions</li><li>SEO technique inclus</li><li>Intégration CMS</li><li>Support 3 mois</li></ul>
+      <button class="btn-plan featured" onclick="showPage('contact')">Choisir Pro →</button>
+    </div>
+    <div class="pricing-card">
+      <div class="plan-name">Enterprise</div><div class="plan-price" style="font-size:2rem">Sur devis</div><div class="plan-period">/ selon le projet</div>
+      <ul class="plan-features"><li>Application web complète</li><li>Intégration IA</li><li>Architecture scalable</li><li>Équipe dédiée</li><li>SLA & suivi mensuel</li><li>Support illimité</li></ul>
+      <button class="btn-plan" onclick="showPage('contact')">Nous contacter →</button>
+    </div>
+  </div>
+  <div style="text-align:center;padding:0 2rem 4rem;color:#888;font-size:0.9rem;">
+    Des questions ? <a href="#" onclick="showPage('blog');return false;" style="color:var(--neon-blue);text-decoration:none;">Voir notre blog</a> ou <a href="#" onclick="showPage('contact');return false;" style="color:var(--neon-violet);text-decoration:none;">nous contacter</a>.
+  </div>
+  <footer>© 2026 ADC Studio — <a href="#" onclick="showPage('home');return false;">Accueil</a> · <a href="https://stripe.com" target="_blank" rel="noopener">Paiement sécurisé Stripe ↗</a></footer>
+</div>
+ 
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+  <div class="contact-layout">
+    <div class="contact-left">
+      <h1>Parlons de votre <em>projet</em></h1>
+      <p>Que vous ayez une idée précise ou un simple rêve, nous sommes là pour le transformer en réalité digitale. Réponse sous 24h.</p>
+      <div class="contact-info">
+        <div class="contact-info-item"><div class="contact-info-icon ci-blue">📧</div><div><div class="contact-info-label">Email</div><a href="razafimandimbyalfredo@gmail.com" class="ext-link contact-info-text">razafimandimbyalfredo@gmail.com</a></div></div>
+        <div class="contact-info-item"><div class="contact-info-icon ci-sky">💬</div><div><div class="contact-info-label">WhatsApp</div><a href="https://wa.me/+261334312444" target="_blank" class="ext-link contact-info-text">+261334312444</a></div></div>
+        <div class="contact-info-item"><div class="contact-info-icon ci-violet">🔗</div><div><div class="contact-info-label">LinkedIn</div><a href="www.linkedin.com/in/alfredo-razafimandimby-6325313ba" target="_blank" class="ext-link contact-info-text">linkedin.com/in/ADICT/a></div></div>
+        <div class="contact-info-item"><div class="contact-info-icon ci-blue">🐙</div><div><div class="contact-info-label">GitHub</div><a href="https://Alfredo Razafimandimbygithub.com" target="_blank" class="ext-link contact-info-text">github.com/</a></div></div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <h2>Envoyez-nous un message</h2>
+      <div class="form-row">
+        <div class="form-group"><label>Prénom</label><input type="text" placeholder="Jean" id="f-prenom"></div>
+        <div class="form-group"><label>Nom</label><input type="text" placeholder="Dupont" id="f-nom"></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="jean.dupont@email.com" id="f-email"></div>
+      <div class="form-group"><label>Type de projet</label><select id="f-type"><option value="">Choisissez...</option><option>Site vitrine</option><option>Application web</option><option>Design UI/UX</option><option>Intégration IA</option><option>Autre</option></select></div>
+      <div class="form-group"><label>Votre message</label><textarea placeholder="Décrivez votre projet, vos objectifs, votre budget estimé..." id="f-message"></textarea></div>
+      <button class="form-submit" onclick="sendForm()">Envoyer le message ✦</button>
+      <div class="success-msg" id="success-msg">✅ Message envoyé ! Nous vous répondons sous 24h. Merci !</div>
+    </div>
+  </div>
+</div>
+ 
+<script>
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.getElementById('nav-' + name).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function filterWorks(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.work-card').forEach(card => {
+    card.style.display = (cat === 'all' || (card.dataset.cat||'').includes(cat)) ? '' : 'none';
+  });
+}
+function sendForm() {
+  const prenom = document.getElementById('f-prenom').value.trim();
+  const email  = document.getElementById('f-email').value.trim();
+  if (!prenom || !email) { alert('Merci de renseigner au moins votre prénom et email.'); return; }
+  document.getElementById('success-msg').classList.add('show');
+  ['f-prenom','f-nom','f-email','f-message'].forEach(id => document.getElementById(id).value = '');
+}
+document.querySelectorAll('nav a:not(.nav-cta)').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+</script>
+</body>
+</html>
